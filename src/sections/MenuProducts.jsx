@@ -130,39 +130,39 @@ export default function MenuProducts() {
         <div className="flex justify-center mb-12 sm:mb-16">
           <div className="relative bg-[#FFFBEF] border border-brand-green/10 p-1.5 rounded-full flex shadow-md">
             
-            {/* Restaurant Tab Button */}
-            <button
-              onClick={() => setActiveTab('restaurant')}
-              className={`relative px-6 sm:px-10 py-3 rounded-full text-sm sm:text-base font-bold tracking-wider uppercase transition-colors duration-300 z-10 focus:outline-none ${
-                activeTab === 'restaurant' ? 'text-primary' : 'text-brand-green'
-              }`}
-            >
-              Restaurant Menu
-              {activeTab === 'restaurant' && (
-                <motion.span
-                  layoutId="activeMenuTab"
-                  className="absolute inset-0 bg-brand-green rounded-full -z-10"
-                  transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-                />
-              )}
-            </button>
-
-            {/* Dairy Tab Button */}
-            <button
-              onClick={() => setActiveTab('dairy')}
-              className={`relative px-6 sm:px-10 py-3 rounded-full text-sm sm:text-base font-bold tracking-wider uppercase transition-colors duration-300 z-10 focus:outline-none ${
-                activeTab === 'dairy' ? 'text-primary' : 'text-brand-green'
-              }`}
-            >
-              Dairy Products
-              {activeTab === 'dairy' && (
-                <motion.span
-                  layoutId="activeMenuTab"
-                  className="absolute inset-0 bg-brand-green rounded-full -z-10"
-                  transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-                />
-              )}
-            </button>
+             {/* Restaurant Tab Button */}
+             <button
+               onClick={() => setActiveTab('restaurant')}
+               className={`relative px-6 sm:px-10 py-3 rounded-full text-sm sm:text-base font-bold tracking-wider uppercase transition-colors duration-300 z-10 focus:outline-none ${
+                 activeTab === 'restaurant' ? 'text-primary' : 'text-brand-green'
+               }`}
+             >
+               <span className="relative z-10">Restaurant Menu</span>
+               {activeTab === 'restaurant' && (
+                 <motion.span
+                   layoutId="activeMenuTab"
+                   className="absolute inset-0 bg-brand-green rounded-full"
+                   transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                 />
+               )}
+             </button>
+ 
+             {/* Dairy Tab Button */}
+             <button
+               onClick={() => setActiveTab('dairy')}
+               className={`relative px-6 sm:px-10 py-3 rounded-full text-sm sm:text-base font-bold tracking-wider uppercase transition-colors duration-300 z-10 focus:outline-none ${
+                 activeTab === 'dairy' ? 'text-primary' : 'text-brand-green'
+               }`}
+             >
+               <span className="relative z-10">Dairy Products</span>
+               {activeTab === 'dairy' && (
+                 <motion.span
+                   layoutId="activeMenuTab"
+                   className="absolute inset-0 bg-brand-green rounded-full"
+                   transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                 />
+               )}
+             </button>
 
           </div>
         </div>

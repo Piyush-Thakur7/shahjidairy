@@ -151,7 +151,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-brand-green border-t border-brand-green-light text-primary shadow-2xl overflow-hidden"
+            className="md:hidden bg-brand-green border-t border-brand-green-light text-primary shadow-2xl overflow-y-auto max-h-[calc(100vh-80px)]"
           >
             <div className="px-4 pt-4 pb-6 space-y-3">
               {navLinks.map((link) => {

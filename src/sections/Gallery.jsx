@@ -85,7 +85,7 @@ export default function Gallery() {
               />
 
               {/* Hover overlay */}
-              <div className="absolute inset-0 bg-brand-green/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-center items-center p-6 text-center">
+              <div className="absolute inset-0 bg-brand-green/80 opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-300 flex flex-col justify-center items-center p-6 text-center">
                 <Maximize2 className="text-brand-orange mb-3 transform scale-75 group-hover:scale-100 transition-transform duration-300" size={28} />
                 <span className="text-primary font-heading font-semibold text-lg max-w-[240px] transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                   {img.caption}
